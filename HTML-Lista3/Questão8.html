@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Validação de Formulário</title>
+    <meta charset="UTF-8">
+    <script src="JS/Home.js"></script>
+    <style>
+        #Q8 {
+
+            height: 400px;
+            width: 300px;
+            border: solid 1px black;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="Q8">
+        <form name="form">
+            <h3>Formulário de Cadastro</h3>
+            Nome: <input type="text" name="name">
+            <p></p>
+            <p>Tipo de Pessoa</p>
+            Física: <input type="radio" name="qual" value="cpf" onclick="valor('cpf')"><br>
+            Jurídica: <input type="radio" name="qual" value="cnpj" onclick="valor('cnpj')">
+            <input type="text" name="cpf" value="Insira seu CPF" style="display:none;">
+            <input type="text" name="cnpj" value="Insira seu CNPJ" style="display:none;">
+            <p></p>
+            <input type="date" name="date" value="Insira seu Nascimento" style="display:none;">
+            <p></p>
+            Endereço: <input type="text" name="end">
+            <p></p>
+            CEP: <input id="Ce" type="text" name="cep" onblur="CheckNumber(this.value)">
+            <p></p>
+            Telefone: <input type="tel" name="cel">
+            <p></p>
+            Email: <input type="email" name="email">
+            <p></p>
+            <input type="submit" name="sub" value="Enviar">
+        </form>
+    </div>
+</body>
+
+</html>

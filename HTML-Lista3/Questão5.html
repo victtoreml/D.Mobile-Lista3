@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Validação de Formulário</title>
+    <meta charset="UTF-8">
+    <script src="JS/Home.js"></script>
+    <style>
+        #F1 {
+            margin: auto;
+            height: 400px;
+            width: 400px;
+            border: solid 1px black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="F1">
+        <form name="F2">
+            <h3>Formulário de Login</h3>
+            <p></p>
+            Login: <input type="text" name="Email">
+            <p></p>
+            Senha: <input type="password" name="Senha" required="">
+            <p></p>
+            Confirmar Senha: <input type="password" name="ConfirmarS" required="">
+            <p></p>
+            <input type="submit" value="Cadastrar" onclick="return ValidarFormulario()">
+        </form>
+    </div>
+
+</body>
+
+</html>
